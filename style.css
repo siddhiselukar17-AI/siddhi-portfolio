@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #520260;
+    font-family: sans-serif;
+    color: rgb(6, 16, 25);
+    line-height: 1.6;
+}
+
+.main-container{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr ;
+    gap : 50px;
+    padding-top: 40px;
+    margin: auto;
+
+}
+
+.sidebar{
+    /* height: 90vh; */
+    background:   rgb(237, 209, 237);
+    border: 2px solid #640689;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, rgb(245, 143, 245), rgb(239, 239, 234));
+}
+
+
+
+/*----------------------------------- profile ----------------------------*/
+
+.profile{
+    text-align: center;
+    margin: 10%;
+    padding: auto;
+}
+
+.profile img{
+    
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1.5px solid #110f12;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.671);
+    
+}
+.h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+
+/* /-------------------------------------* contact *----------------------------/ */
+.contact{
+    align-self: normal;
+    padding: 30px;
+    border-top: 2px solid rgb(164, 23, 235);
+    margin: 30px;
+}
+.lable{
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgb(4, 33, 147);
+}
+.value{
+
+    color: rgb(9, 3, 37);
+    text-decoration: none;
+    
+}
+.email,.phone{
+    margin-bottom: 10px;
+}
+
+/*----------------------------- social midia---------------------------- */
+
+.social{
+    padding: 30px;
+    border-top: 2px solid rgb(164, 23, 235);
+    margin: 30px;
+    text-align: center;
+}
+.social img{
+    height: 24px;
+    width: 24px; 
+    margin-left: 15px;   
+    filter: brightness(0) saturate(100%) invert(11%) sepia(74%) saturate(5204%) hue-rotate(250deg) brightness(91%) contrast(127%);
+    transition: filter 0.3s ease;
+}
+.social img:hover{
+    filter: brightness(0) saturate(0%) invert(0%) sepia(0%) saturate(0%) hue-rotate(348deg) brightness(0%) contrast(0%);
+}
+
+/*================================ maincontain========================= */
+.main-contain{
+    
+    background: rgb(237, 209, 237);
+    border: 2px solid #2307f7;
+    padding: 30px;
+    border-radius: 16px;
+    
+    
+}
+
+#navigation{
+    padding: 10px 20px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    border-bottom: 1px solid rebeccapurple;
+}
+nav a{
+    text-decoration: none;
+    color: #037eb3;
+    font-weight: 500;
+    transition: color 0.2s erase;
+    
+}
+.active ,nav a:hover{
+    color: #2008ba;
+}
+
+/* =======================================about me==================================== */
+.heading{
+    color: #7203c2;
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-bottom: 3px;
+    text-decoration: underline;
+ 
+
+}
+
+.conta_in{
+    text-align: justify;
+    text-underline-offset: 20px; 
+    color: #100202;
+    
+
+}
+#about{
+    margin-bottom: 20px;
+}
+
+
+
+/*================================== skills =================================== */
+
+
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 40px;
+    
+}
+.item{
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(170, 7, 188);
+    background-color: rgba(223, 144, 243, 0.489);
+    text-align: center;
+    margin-top: 20px;
+    transition: trasform 0.3s ease , boxshadow 0.3s ease;
+}
+.item img{
+    height: 48px;
+    width: 48px;
+    filter: brightness(0) saturate(100%) invert(9%) sepia(44%) saturate(4305%) hue-rotate(239deg) brightness(113%) contrast(124%);    
+}
+
+.item h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+.item:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgb(244, 148, 237);
+}
+
+/* -------------------------education----------------------- */
+#education{
+    margin-top: 30px;
+    
+}
+.year{
+    font-size: 1rem;
+}
+.edfirst h3{
+    color: #2d0661;
+
+}
+.edtech{
+    position: relative;
+}
+.edfirst {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 30px;
+}
+.goal{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 5px solid rgb(4, 33, 147);
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+.line{
+    position: absolute;
+    width: 2px;
+    top: 12px;
+    bottom: 0px;
+    left: 6px;
+    border: 2px solid rgb(4, 33, 147);
+
+}
+
+/* ------------------------Responsive---------------*/
+@media (min-width: 600px) {
+  /* .main-container {grid-area: 1 / span 6;}
+  .heading{grid-area: 1 / span 4;}
+   */
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #520260;
+}
+
+.main-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar{
+    width: 300px;
+    background: rgb(237, 209, 237);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(245, 143, 245), rgb(239, 239, 234));
+
+}
+
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact{
+    margin-top: 20px;
+}
+
+.contact div{
+    margin-bottom: 15px;
+}
+
+.social{
+    margin-top: 20px;
+}
+
+.social img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+/* Main Content */
+.main-contain{
+    flex: 1;
+    background: rgb(237, 209, 237);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.heading{
+    margin-bottom: 15px;
+}
+
+#aboutme,
+#skills,
+#education{
+    margin-bottom: 40px;
+}
+
+/* Skills */
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
+    gap: 20px;
+}
+
+.item{
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.item img{
+    width: 50px;
+    height: 50px;
+}
+
+/* Education */
+.edfirst{
+    margin-bottom: 20px;
+}
+
+.year{
+    font-weight: bold;
+    color: #666;
+}
+
+/* Images Responsive */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet */
+@media screen and (max-width:768px){
+
+    .main-container{
+        flex-direction: column;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .main-contain{
+        width: 100%;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .grid-conteiner{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:480px){
+
+    .profile img{
+        width: 120px;
+        height: 120px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .grid-conteiner{
+        grid-template-columns: 1fr;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    h3{
+        font-size: 16px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+
+    
+}
